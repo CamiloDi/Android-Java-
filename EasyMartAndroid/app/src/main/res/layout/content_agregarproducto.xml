@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_agregarproducto"
+    tools:context="com.example.camilo.pruebaeasymart.AgregarProductos"
+    android:background="@drawable/agregarprod">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:background="#ccdee2e7">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Codigo Producto :"
+                android:id="@+id/textView26" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/txtID"
+                android:textColor="#000000" />
+
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible"
+                android:indeterminate="false"
+                android:layout_column="1"
+                android:layout_alignTop="@+id/btnScan2"
+                android:layout_toRightOf="@+id/btnScan"
+                android:layout_toEndOf="@+id/btnScan" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="133dp"
+                android:layout_height="39dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Producto :"
+                android:id="@+id/textView3"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/txtProducto"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="62dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=" Detalle :"
+                android:id="@+id/textView24"
+                android:layout_weight="0.12"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="67dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/txtDetalle"
+                android:layout_weight="0.37"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Cantidad :"
+                android:id="@+id/textView25"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.20"
+                android:textColor="#000000" />
+
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nPicker"
+                android:layout_weight="0.15"
+                android:solidColor="#000000" />
+        </TableRow>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="21dp"></TableLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Precio : "
+                android:id="@+id/textView27"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="68dp"
+                android:layout_height="25dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/txtPrecio"
+                android:background="@drawable/pizarra"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:layout_weight="0.38" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="118dp"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:id="@+id/btnCancelar"
+                android:drawableLeft="@drawable/ic_navigation_cancel"
+                android:layout_gravity="bottom"
+                android:background="@drawable/boton"
+                android:layout_weight="0.10" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="0.30"></LinearLayout>
+
+            <Button
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:text="Agregar"
+                android:id="@+id/btnAgregar"
+                android:drawableLeft="@drawable/ic_action_add_shopping_cart"
+                android:layout_gravity="bottom"
+                android:background="@drawable/boton"
+                android:layout_weight="0.06" />
+        </TableRow>
+
+    </LinearLayout>
+</RelativeLayout>

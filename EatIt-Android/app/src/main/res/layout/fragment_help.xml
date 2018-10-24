@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.develop.eatit.Fragments.Help">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+
+        android:id="@+id/tvBlanco"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text=""
+        />
+    <ImageView
+    android:id="@+id/ivHelp"
+    android:src="@mipmap/img_eatlogo"
+    android:layout_width="70pt"
+    android:layout_height="70pt"
+    android:layout_gravity="center_horizontal"/>
+
+    <TextView
+
+        android:id="@+id/tvBlanco1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text=""/>
+    <TextView
+        android:id="@+id/tvTituloHelp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Tienes alguna duda con respecto a nuestro servicio?"/>
+    <TextView
+
+        android:id="@+id/tvBlanco2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text=""/>
+    <TextView
+
+        android:id="@+id/tvContenido1"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No dudes en contactarte con nosotros"/>
+    <TextView
+
+        android:id="@+id/tvBlanco3"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text=""/>
+    <TextView
+
+        android:id="@+id/tvContenido2"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="via telefonica al numero 9-61190103  "/>
+    <TextView
+
+        android:id="@+id/tvBlanco4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <TextView
+
+        android:id="@+id/tvContenido3"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="via mail al correo contacto@eatit.com"/>
+
+    <TextView
+
+        android:id="@+id/tvBlanco5"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text=""/>
+
+    <TextView
+
+        android:id="@+id/tvContenido4"
+        android:textAlignment="textEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EatIt® Todos los Derechos Reservados. 2016"/>
+
+</LinearLayout>

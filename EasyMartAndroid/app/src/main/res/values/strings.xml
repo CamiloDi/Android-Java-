@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Easy Mart</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Easy Mart</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_menu_app">Menu</string>
+    <string name="title_activity_actualizar">Actualizar Datos</string>
+    <string name="title_activity_boletas">Ver Boletas</string>
+    <string name="title_activity_comprar">Comprar</string>
+    <string name="title_activity_preguntas">Preguntas Frecuentes</string>
+    <string name="title_activity_salir">Salir</string>
+    <string name="title_activity_detalle_producto">Detalle del Producto</string>
+    <string name="title_activity_detalle__boleta">Detalle Boleta</string>
+    <string name="title_activity_pagar">Pagar</string>
+    <string name="title_activity_espera">Espera</string>
+
+    <string name="efectivo">Efectivo</string>
+    <string name="paypal">Paypal</string>
+
+    <array name="MedioPago">
+        <item>Efectivo</item>
+        <item>Paypal</item>
+    </array>
+    <string name="title_activity_registro">Registro</string>
+
+    <!--Variables de Correo -->
+    <string name="usuario_correo">pruebaeasymart@gmail.com</string>
+    <string name="pass_correo">easymart123</string>
+    <string name="asunto_correo">Solicitud de Envio de Clave</string>
+
+    <!--Variables de Mensajes-->
+    <string name="mensaje_login">Fallo el Login, Intente nuevamente</string>
+    <string name="mensaje_escaner">Ingrese un Codigo o Escaneelo</string>
+
+
+    <!-- Variable de Preferencias -->
+    <string name="preferencias">Sesion_Usuario</string>
+</resources>

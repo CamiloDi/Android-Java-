@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <dimen name="ListaLargo">610sp</dimen>
+    <dimen name="ListaAncho">560sp</dimen>
+    <dimen name="TextoComun">50sp</dimen>
+    <dimen name="Titulos">610sp</dimen>
+    <dimen name="Botones">50sp</dimen>
+    <dimen name="Textos">610sp</dimen>
+    <dimen name="Menu">610sp</dimen>
+    <dimen name="BotonPagar">40sp</dimen>
+    <dimen name="totalCompra">200sp</dimen>
+    <dimen name="totalcompranumero">90sp</dimen>
+
+    <dimen name="ImagenLargo">300sp</dimen>
+    <dimen name="rutAncho">100sp</dimen>
+    <dimen name="rutAncho2">470sp</dimen>
+    <dimen name="passAncho">270sp</dimen>
+    <dimen name="passAncho2">300sp</dimen>
+    <dimen name="Largocomun">100sp</dimen>
+    <dimen name="BotonesAnchoLogin">270sp</dimen>
+
+
+</resources>

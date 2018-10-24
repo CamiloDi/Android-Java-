@@ -1,0 +1,13 @@
+language: android
+android:
+        components:
+                - platform-tools
+                - build-tools-24.0.0
+                - android-23
+                - extra-android-m2repository
+
+before_install:
+        - chmod +x gradlew
+branches:
+        only:
+                - master

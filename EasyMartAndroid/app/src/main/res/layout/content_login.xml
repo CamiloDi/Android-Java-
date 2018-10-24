@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_login" tools:context=".Login"
+    android:background="@drawable/carritoy">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ImagenLargo"
+            android:id="@+id/imgLogin"
+            android:background="@drawable/cartel_abierto"
+            android:layout_span="5" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#cce7dede">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Rut:"
+                    android:id="@+id/lblRut"
+                    android:layout_gravity="center"
+                    android:textColor="#030000"
+                    android:textColorHighlight="#030000" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/txtRut"
+                    android:layout_column="4"
+                    android:hint="sin puntos ni digito verificador"
+                    android:imeOptions="actionNext"
+                    android:autoText="true"
+                    android:textColor="#030000"
+                    android:backgroundTintMode="add" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Password:"
+                    android:id="@+id/lblPass"
+                    android:layout_column="1"
+                    android:textColor="#030000" />
+
+                <EditText
+                    android:layout_width="178dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/txtPass"
+                    android:hint="Escriba su Contraseña"
+                    android:imeOptions="actionSend"
+                    android:imeActionLabel="Ingresar"
+                    android:textColor="#030000" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fragment_login_password_visibility"
+                    android:clickable="true"
+                    android:visibility="visible"
+                    android:src="@drawable/ic_show_password" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:layout_width="@dimen/BotonesAnchoLogin"
+                    android:layout_height="@dimen/Largocomun"
+                    android:text="Ingresar"
+                    android:id="@+id/btnIngresar"
+                    android:layout_column="4"
+                    android:background="@drawable/boton"
+                    android:textColor="#fefefe" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="23dp"
+                    android:layout_height="match_parent"></LinearLayout>
+
+                <Button
+                    android:layout_width="@dimen/BotonesAnchoLogin"
+                    android:layout_height="@dimen/Largocomun"
+                    android:text="Registarse"
+                    android:id="@+id/btnRegistrarse"
+                    android:layout_column="4"
+                    android:background="@drawable/boton"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_weight="0.10">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="56dp"
+                    android:layout_height="match_parent">
+
+                    <ProgressBar
+                    android:id="@+id/progressBar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                    android:indeterminate="false"
+                    android:layout_column="1"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Olvido Su Contraseña?"
+                    android:id="@+id/btnOlvidar"
+                    android:background="@drawable/boton"
+                    android:layout_weight="0.14"
+                    android:textColor="#fefefe" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="338dp"
+        android:layout_marginEnd="338dp"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/textView14"
+        android:visibility="invisible" />
+
+</RelativeLayout>

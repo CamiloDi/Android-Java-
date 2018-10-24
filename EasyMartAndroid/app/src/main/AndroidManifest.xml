@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.camilo.pruebaeasymart">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Easy Mart"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuApp"
+            android:label="@string/title_activity_menu_app"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.camilo.pruebaeasymart.Login" />
+        </activity>
+        <activity
+            android:name=".Actualizar"
+            android:label="@string/title_activity_actualizar"
+            android:parentActivityName=".MenuApp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.camilo.pruebaeasymart.MenuApp" />
+        </activity>
+        <activity
+            android:name=".Boletas"
+            android:label="@string/title_activity_boletas"
+            android:parentActivityName=".MenuApp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.camilo.pruebaeasymart.MenuApp" />
+        </activity>
+        <activity
+            android:name=".Comprar"
+            android:label="@string/title_activity_comprar"
+            android:parentActivityName=".MenuApp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.camilo.pruebaeasymart.MenuApp"
+                 />
+        </activity>
+        <activity
+            android:name=".Preguntas"
+            android:label="@string/title_activity_preguntas"
+            android:parentActivityName=".MenuApp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.camilo.pruebaeasymart.MenuApp" />
+        </activity>
+        <activity
+            android:name=".Salir"
+            android:label="@string/title_activity_salir"
+            android:parentActivityName=".MenuApp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.camilo.pruebaeasymart.MenuApp" />
+        </activity>
+        <activity
+            android:name=".DetalleProducto"
+            android:label="@string/title_activity_detalle_producto"
+            android:parentActivityName=".MenuApp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.camilo.pruebaeasymart.MenuApp" />
+        </activity>
+        <activity
+            android:name=".Detalle_Boleta"
+            android:label="@string/title_activity_detalle__boleta"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Pagar"
+            android:label="@string/title_activity_pagar"
+            android:parentActivityName=".Comprar"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.camilo.pruebaeasymart.Comprar" />
+        </activity>
+        <activity
+            android:name=".Espera"
+            android:label="@string/title_activity_espera"
+            android:parentActivityName=".Pagar"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.camilo.pruebaeasymart.Pagar" />
+        </activity>
+        <activity
+            android:name=".AgregarProductos"
+            android:label="AgregarProductos"
+            android:parentActivityName=".Comprar"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.camilo.pruebaeasymart.MenuApp" />
+        <activity
+            android:name=".Registro"
+            android:label="@string/title_activity_registro"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <service android:name="com.paypal.android.sdk.payments.PayPalService" android:exported="false" />
+
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+    </application>
+
+
+
+</manifest>
